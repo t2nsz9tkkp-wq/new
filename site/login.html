@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login | clientassociation.com</title>
+  <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-box">
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Login to access your account</p>
+      
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginName">Name</label>
+          <input type="text" id="loginName" name="name" required autocomplete="username">
+        </div>
+        
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" name="email" required autocomplete="email">
+        </div>
+        
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="password" required autocomplete="current-password">
+        </div>
+        
+        <button type="submit" class="btn-primary" id="loginSubmitBtn">Login</button>
+        
+        <p class="message" id="loginMessage"></p>
+      </form>
+      
+      <div class="auth-footer">
+        <p>Don't have an account? <button class="link-btn" id="showSignup">Create an account</button></p>
+        <p class="auth-domain">clientassociation.com</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="auth.js"></script>
+</body>
+</html>

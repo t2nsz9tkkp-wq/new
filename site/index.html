@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Miykael Barner — Freelance Services | clientassociation.com</title>
+  <meta name="description" content="Professional freelance services at clientassociation.com. Hire me for web development, design, or consulting.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#" id="homeLink">Miykael Barner</a>
+      <nav>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link cta">Contact</a>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <h1>Get more clients with better product & design</h1>
+          <p>I'm a freelance developer and consultant. I help businesses ship profitable websites and apps that convert visitors into customers.</p>
+          <a href="#contact" class="primary" id="consultBtn">Get a free consult</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/560x360.png?text=Your+Work" alt="Featured work" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Custom landing pages, single-page apps, and conversion-optimised sites.</p>
+        </div>
+        <div class="card">
+          <h3>UX & Design</h3>
+          <p>Design, prototyping, and UI that makes products intuitive and delightful.</p>
+        </div>
+        <div class="card">
+          <h3>Consulting</h3>
+          <p>Strategy sessions for product-market fit, growth, and technical architecture.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="container work">
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <div class="project">
+          <img src="https://via.placeholder.com/400x240.png?text=Project+1" alt="Project 1" loading="lazy">
+          <h4>Project Title</h4>
+          <p>Short description of impact and results.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/400x240.png?text=Project+2" alt="Project 2" loading="lazy">
+          <h4>Project Title</h4>
+          <p>Short description of impact and results.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/400x240.png?text=Project+3" alt="Project 3" loading="lazy">
+          <h4>Project Title</h4>
+          <p>Short description of impact and results.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container testimonials">
+      <h2>Testimonials</h2>
+      <blockquote>
+        "They shipped a conversion-optimised redesign that increased leads by 37% in 3 months."
+        <cite>— Client Company</cite>
+      </blockquote>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Book a free 30-minute consultation or send a message and I'll get back within 24 hours.</p>
+
+      <form id="contactForm" action="https://formsubmit.co/Parkgamesofficial@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from Miykael Barner site">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <label for="name">Name</label>
+        <input id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required autocomplete="off"></textarea>
+
+        <button type="submit" class="primary" id="contactSubmitBtn">Send message</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+
+      <p class="alt-contact">Or email me directly at <a href="mailto:Parkgamesofficial@gmail.com">Parkgamesofficial@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> <a href="https://clientassociation.com" class="footer-domain">clientassociation.com</a> — Miykael Barner, Freelance Developer</p>
+      <nav>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

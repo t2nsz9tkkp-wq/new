@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Disapprove Login</title></head>
+<body>
+<h2>Disapprove Login</h2>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const email = urlParams.get('user');
+  const device = urlParams.get('device');
+
+  fetch('/api/disapprove', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email: email, device: device })
+  }).then(res => res.json()).then(data => {
+    alert('Login disapproved.');
+    window.location.href = 'login.html';
+  }).catch(() => {
+    alert('Error disapproving login.');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Verify Email | clientassociation.com</title>
+  <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-box">
+      <h1>Verify Your Email</h1>
+      <p class="subtitle">We've sent a 6-digit code to <strong id="verifyEmail"></strong></p>
+      <p class="subtitle-small">Code expires in <span id="timer">10:00</span></p>
+      <p class="subtitle-small" id="verificationCodeHint" style="display: none; margin-top: 0.5rem; font-weight: 600;"></p>
+      
+      <form id="verifyForm">
+        <div class="form-group">
+          <label for="verificationCode">Enter 6-Digit Code</label>
+          <input type="text" id="verificationCode" name="code" maxlength="6" pattern="[0-9]{6}" placeholder="000000" inputmode="numeric" required autocomplete="one-time-code">
+        </div>
+        
+        <button type="submit" class="btn-primary" id="verifySubmitBtn">Verify Account</button>
+        
+        <p class="message" id="verifyMessage"></p>
+      </form>
+      
+      <div class="auth-footer">
+        <p>Didn't receive the code? <button class="link-btn" id="resendCode" disabled>Resend Code (<span id="resendTimer">30</span>s)</button></p>
+        <p class="auth-domain">clientassociation.com</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="auth.js"></script>
+</body>
+</html>
